@@ -1,0 +1,91 @@
+.feature {
+    min-height: 290px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+
+    &__centered {
+        text-align: center;
+    }
+
+    &--content {
+        padding-right: 2.5rem;
+        padding-left: 2.5rem;
+    }
+
+    &--heading {
+        font-size: 1.15rem;
+        margin-top: 1rem;
+    }
+    &--title {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+
+        &__margin-l {
+            margin-bottom: 2.5rem;
+        }
+    }
+
+    &__single {
+        @extend .feature;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    &--description {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: 300;
+
+        &__margin-l {
+            margin: 2rem 0;
+        }
+
+        &__margin-ts {
+            margin: 1rem 0 0 0;
+        }
+
+        &__large {
+            font-size: 2.5rem;
+            line-height: 3.25rem;
+            font-weight: 100;
+        }
+    }
+}
+
+// Help Card
+.help-card {
+    padding: 1rem;
+    margin: 1rem;
+    background-color: $darkBlue;
+    color: #ffffff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &--margin-l {
+        margin-left: 4rem;
+    }
+
+    &--heading {
+        padding-bottom: 1rem;
+        margin: 0.5rem;
+        position: relative;
+        font-size: 1.25rem;
+        font-weight: 700;
+    }
+
+    h3::after {
+        content: '';
+        position: absolute;
+        border-top: 2px solid $babyBlue;
+        left: 25%;
+        bottom: 0;
+        width: 50%;
+        height: 0px;
+    }
+}

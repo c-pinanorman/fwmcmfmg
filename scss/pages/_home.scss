@@ -1,0 +1,127 @@
+// Why Us
+.why-us {
+    max-width: 1366px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+
+    &--text-content {
+        margin: 2rem 8rem 2rem 10rem;
+        width: 50%;
+    }
+
+    &--heading {
+        font-size: 1.5rem;
+    }
+
+    &--title {
+        font-size: 3.25rem;
+    }
+
+    &--description {
+        margin: 1.25rem 0;
+    }
+
+    &--image {
+        height: 100%;
+    }
+}
+
+// Specialties
+.specialties {
+    text-align: center;
+
+    &--heading {
+        font-size: 1.5rem;
+    }
+
+    &--title {
+        font-size: 3.25rem;
+        margin: 1rem 0;
+    }
+
+    &--description {
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+    }
+
+    &--cards-container {
+        display: flex;
+        margin: 3rem 0;
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+.specialty-card {
+    width: 300px;
+    padding: 1.5rem;
+    background-color: $darkBlue;
+    border-radius: 8px;
+    color: #ffffff;
+    text-align: left;
+
+    &--heading {
+        font-size: 1.15rem;
+        margin-bottom: 1rem;
+        font-weight: 500;
+    }
+
+    &--description {
+        font-size: 0.85rem;
+        line-height: 1.25rem;
+    }
+
+    &--icon {
+        width: 60px;
+        height: 60px;
+        margin: 0 auto 1.5rem auto;
+        border-radius: 50%;
+        background-color: #ffffff;
+        color: $darkGray;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        i {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.other-services {
+    margin-bottom: 2rem;
+    text-align: left;
+
+    &--heading {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    &--container {
+        margin-bottom: 2rem;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+}
+
+.other-service {
+    width: 245px;
+    padding: 0.75rem;
+    margin-top: 1rem;
+    border: solid 1px $highlightBlue;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-evenly;
+
+    p {
+        line-height: 1.5rem;
+    }
+
+    i {
+        font-size: 1.5rem;
+    }
+}

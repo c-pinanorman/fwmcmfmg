@@ -1,0 +1,96 @@
+.community-outreach {
+    max-width: 1366px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    &--text-content {
+        margin: 2rem 10rem 2rem 6rem;
+        width: 50%;
+    }
+
+    &--heading {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    &--title {
+        font-size: 3.25rem;
+    }
+
+    &--description {
+        margin: 1.25rem 0;
+        font-size: 1.15rem;
+        line-height: 1.75rem;
+    }
+
+    &--image {
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.events {
+    &--container {
+        margin-top: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.event-card {
+    width: 46%;
+    background-color: #ffffff;
+    display: flex;
+    margin-bottom: 2rem;
+
+    &--text-container {
+        padding: 0 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &--title {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    &--description {
+        margin-bottom: 2rem;
+        font-size: 0.85rem;
+    }
+
+    &--date {
+        color: $highlightBlue;
+    }
+}
+
+.organizations {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+
+    &--text-container {
+        width: 60%;
+    }
+
+    &--logo-container {
+        width: 40%;
+        text-align: center;
+    }
+
+    &--heading {
+        font-size: 3.25rem;
+    }
+
+    &--description {
+        margin-top: 2rem;
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
+}

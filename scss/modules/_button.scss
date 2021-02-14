@@ -1,0 +1,35 @@
+.btn {
+    background-color: $mediumBlue;
+    padding: 0.65rem 2rem;
+    display: inline-block;
+    color: #ffffff;
+    border-radius: 8px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1.5rem;
+
+    &--long {
+        width: 265px;
+        font-size: 0.85rem;
+    }
+
+    &--light {
+        background-color: $babyBlue;
+        color: $darkBlue;
+    }
+
+    &--highlight {
+        background-color: $highlightBlue;
+    }
+
+    &--margin-tb {
+        margin: 0.5rem;
+    }
+
+    &--icon {
+        font-size: 1.25rem;
+        margin-right: 1.25rem;
+        vertical-align: middle;
+    }
+}

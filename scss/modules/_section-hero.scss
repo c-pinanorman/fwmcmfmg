@@ -1,0 +1,83 @@
+// Hero Section - Home Page
+.home-hero {
+    position: relative;
+
+    &--image {
+        width: 100%;
+        display: block;
+    }
+
+    &--text-content {
+        position: absolute;
+        top: 25%;
+        right: 8rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &--title {
+        margin-bottom: 2rem;
+        font-weight: 700;
+        font-size: 3.5rem;
+        line-height: 2.5rem;
+        text-transform: uppercase;
+        color: $darkBlue;
+    }
+
+    &--subtitle {
+        font-size: 2.5rem;
+        font-weight: 300;
+    }
+}
+
+//Hero Section - Main Pages
+.page-hero {
+    max-width: 1366px;
+    margin: 0 auto;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    &--headline-container {
+        margin: 0 4rem 2rem 4rem;
+        width: 30%;
+        position: relative;
+    }
+
+    &--headline {
+        font-size: 2.75rem;
+    }
+
+    &--headline::after {
+        content: '';
+        position: absolute;
+        border-top: 3px solid $highlightBlue;
+        left: 0;
+        margin-top: 3.75rem;
+        width: 25%;
+        height: 0px;
+    }
+
+    &--headline-light {
+        font-size: 2.75rem;
+    }
+
+    &--headline-light::after {
+        content: '';
+        position: absolute;
+        border-top: 3px solid #ffffff;
+        left: 0;
+        margin-top: 3.75rem;
+        width: 25%;
+        height: 0px;
+    }
+
+    &--image {
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

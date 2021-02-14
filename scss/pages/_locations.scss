@@ -1,0 +1,50 @@
+.locations {
+    text-align: center;
+
+    &--locations-container {
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.location-card {
+    width: 310px;
+    padding-bottom: 1rem;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+
+    &--image {
+        width: 100%;
+    }
+
+    &--title {
+        font-size: 1.5rem;
+        margin: 1rem 2rem;
+        padding-bottom: 1rem;
+        border-bottom: solid 1px $darkGray;
+    }
+
+    &--section {
+        margin: 0 2.5rem 1rem 2.5rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: left;
+    }
+
+    &--icon {
+        width: 20px;
+        font-size: 1.25rem;
+        color: $highlightBlue;
+        display: block;
+    }
+
+    &--info {
+        margin-left: 1rem;
+        font-size: 1.15rem;
+        line-height: 1.45rem;
+    }
+}

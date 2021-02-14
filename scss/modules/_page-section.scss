@@ -1,0 +1,37 @@
+.page-section {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+
+    &--heading {
+        font-size: 1.75rem;
+        line-height: 2rem;
+        margin-bottom: 1rem;
+
+        &__small {
+            font-size: 1.25rem;
+            line-height: 1.5;
+        }
+
+        &__mt {
+            margin-top: 2rem;
+        }
+
+        &__my {
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+    &--title {
+        font-size: 3.25rem;
+    }
+
+    &--description {
+        margin-bottom: 1rem;
+
+        &__large {
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+        }
+    }
+}

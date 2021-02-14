@@ -1,0 +1,64 @@
+//Mini Navigation Bar//
+.mini-nav {
+    background-color: $darkBlue;
+    height: 2rem;
+
+    ul {
+        height: 100%;
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    li {
+        padding: 0 1.25rem;
+        background-color: $darkGray;
+        display: flex;
+        align-items: center;
+    }
+
+    li:hover {
+        background-color: $highlightBlue;
+    }
+
+    a {
+        color: #ffffff;
+        font-size: 0.875rem;
+        text-transform: uppercase;
+    }
+}
+
+// Main Navigation Bar
+.main-nav {
+    height: 8.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-logo {
+        height: 50%;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+    }
+
+    li {
+        margin: 0 0 0 3rem;
+        padding: 0 0 0.875rem 0;
+        display: flex;
+        align-items: center;
+        border-bottom: 2px solid #ffffff;
+    }
+
+    li:hover {
+        border-bottom: 2px solid $highlightBlue;
+    }
+
+    a {
+        color: $darkBlue;
+        font-size: 1.15rem;
+        text-transform: uppercase;
+    }
+}

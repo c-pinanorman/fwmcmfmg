@@ -1,0 +1,42 @@
+footer {
+    background-color: $darkBlue;
+}
+
+.footer {
+    padding-top: 3.25rem;
+    padding-bottom: 3.25rem;
+    background-color: $darkBlue;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    &--address {
+        margin: 1.5rem 0;
+
+        &__last {
+            margin-bottom: 0;
+        }
+    }
+
+    &--icon-container {
+        display: flex;
+        align-items: center;
+    }
+
+    &--logo {
+        height: 8rem;
+        margin: 0 2rem 0 2rem;
+    }
+
+    &--social-media {
+        display: flex;
+        flex-direction: column;
+
+        &--logo {
+            margin: 1rem 0;
+            height: 40px;
+        }
+    }
+}

@@ -1,0 +1,59 @@
+.pharmacies-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.pharmacy {
+    width: 48%;
+    padding: 1rem 0;
+    border-top: 1px $babyBlue solid;
+    display: flex;
+
+    &__last {
+        border-bottom: 1px $babyBlue solid;
+    }
+
+    &-icon {
+        font-size: 1.5rem;
+        color: $babyBlue;
+        margin-right: 1.5rem;
+    }
+
+    &-title {
+        font-size: 1.2 5rem;
+        line-height: 1.5rem;
+    }
+}
+
+.insurances {
+    text-align: center;
+
+    &-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &-image {
+        margin-top: 1.5rem;
+    }
+}
+
+.affiliates {
+    text-align: center;
+
+    &-container {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &-image {
+        width: 33%;
+    }
+}

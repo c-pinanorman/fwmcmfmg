@@ -1,0 +1,54 @@
+.ceo {
+    display: flex;
+    justify-content: space-between;
+
+    &--image {
+        margin-left: 4.5rem;
+        height: 100%;
+    }
+}
+
+.mission--container {
+    width: 75%;
+    border-top: 1px solid $babyBlue;
+}
+
+.mission-item {
+    padding: 1rem 0;
+    border-bottom: 1px solid $babyBlue;
+    display: flex;
+
+    &--icon {
+        font-size: 1.75rem;
+        color: $darkGray;
+        margin-right: 1.5rem;
+    }
+
+    &--statement {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
+}
+
+.team {
+    text-align: center;
+
+    &--subheading {
+        text-align: left;
+        margin-top: 1rem;
+    }
+}
+
+.physicians-container {
+    margin: 2rem 0 2rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.physician-card {
+    width: 23%;
+
+    &--image {
+        width: 100%;
+    }
+}

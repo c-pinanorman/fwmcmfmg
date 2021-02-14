@@ -1,0 +1,43 @@
+p {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.text-italic {
+    font-style: italic;
+}
+
+.text-bold {
+    font-weight: 700;
+}
+
+.text-thin {
+    font-weight: 300;
+}
+
+.text-gray {
+    color: $darkGray;
+}
+
+.text-light-blue {
+    color: $babyBlue;
+}
+
+.decorate {
+    position: relative;
+    display: inline-block;
+}
+
+.decorate::after {
+    content: '';
+    position: absolute;
+    border-top: 4px solid $highlightBlue;
+    margin-left: 1rem;
+    bottom: 35%;
+    width: 40px;
+    height: 0px;
+}
