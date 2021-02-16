@@ -13,6 +13,7 @@ body {
 img {
     max-width: 100%;
     height: auto;
+    display: block;
 }
 
 h1,
@@ -28,4 +29,21 @@ a {
 
 address {
     font-style: normal;
+}
+
+.test-mixins {
+    height: 20px;
+    width: 100%;
+    @include atLarge {
+        background-color: teal;
+    }
+    @include atMedium {
+        background-color: green;
+    }
+    @include atSmall {
+        background-color: orange;
+    }
+    @include atExtraSmall {
+        background-color: red;
+    }
 }

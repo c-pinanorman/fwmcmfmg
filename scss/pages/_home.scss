@@ -1,3 +1,55 @@
+.home-feature {
+    @include atMedium {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    &--content-container {
+        display: flex;
+        flex-direction: row;
+        width: 66%;
+
+        @include atLarge {
+            width: 60%;
+            flex-direction: column;
+            margin-right: 3rem;
+        }
+
+        @include atMedium {
+            width: 100%;
+            margin-right: 0;
+        }
+    }
+
+    &--content-first {
+        padding: 1rem 2rem;
+        border-right: 1px solid $darkGray;
+
+        @include atLarge {
+            padding: 1rem 2rem 1rem 0;
+            border-bottom: 1px solid $darkGray;
+            border-right: none;
+        }
+
+        @include atMedium {
+            padding: 2rem 2rem;
+        }
+    }
+
+    &--content-last {
+        padding: 1rem 2rem;
+
+        @include atLarge {
+            padding: 1rem 2rem 0 0;
+        }
+
+        @include atMedium {
+            border-bottom: 1px solid $darkGray;
+            padding: 2rem 2rem;
+        }
+    }
+}
+
 // Why Us
 .why-us {
     max-width: 1366px;
@@ -7,9 +59,18 @@
     justify-content: flex-end;
     width: 100%;
 
+    @include atMedium {
+        flex-direction: column-reverse;
+    }
+
     &--text-content {
-        margin: 2rem 8rem 2rem 10rem;
+        margin: 2rem 4rem 2rem 4rem;
         width: 50%;
+
+        @include atMedium {
+            padding: 0 2rem;
+            width: 100%;
+        }
     }
 
     &--heading {
@@ -18,14 +79,33 @@
 
     &--title {
         font-size: 3.25rem;
+
+        @include atLarge {
+            font-size: 2.25rem;
+        }
     }
 
     &--description {
         margin: 1.25rem 0;
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+    }
+
+    &--image-container {
+        height: 100%;
+
+        @include atMedium {
+            width: 100%;
+        }
     }
 
     &--image {
+        object-fit: cover;
         height: 100%;
+
+        @include atMedium {
+            width: 100%;
+        }
     }
 }
 
@@ -49,21 +129,36 @@
 
     &--cards-container {
         display: flex;
+        flex-direction: row;
         margin: 3rem 0;
         display: flex;
         justify-content: space-evenly;
+
+        @include atMedium {
+            flex-direction: column;
+        }
     }
 }
 
 .specialty-card {
-    width: 300px;
+    width: 30%;
     padding: 1.5rem;
     background-color: $darkBlue;
     border-radius: 8px;
     color: #ffffff;
     text-align: left;
 
-    &--heading {
+    @include atMedium {
+        width: 100%;
+        margin-bottom: 2rem;
+        display: flex;
+    }
+
+    @include atExtraSmall {
+        flex-direction: column;
+    }
+
+    &--title {
         font-size: 1.15rem;
         margin-bottom: 1rem;
         font-weight: 500;
@@ -74,10 +169,27 @@
         line-height: 1.25rem;
     }
 
+    &--icon-container {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        margin-bottom: 1.5rem;
+
+        @include atMedium {
+            margin-bottom: 0;
+            margin-right: 3rem;
+        }
+
+        @include atExtraSmall {
+            margin-bottom: 2rem;
+            margin-right: 0;
+        }
+    }
+
     &--icon {
         width: 60px;
         height: 60px;
-        margin: 0 auto 1.5rem auto;
         border-radius: 50%;
         background-color: #ffffff;
         color: $darkGray;
@@ -109,13 +221,17 @@
 }
 
 .other-service {
-    width: 245px;
+    width: 230px;
     padding: 0.75rem;
     margin-top: 1rem;
     border: solid 1px $highlightBlue;
     border-radius: 8px;
     display: flex;
     justify-content: space-evenly;
+
+    @include atExtraSmall {
+        width: 100%;
+    }
 
     p {
         line-height: 1.5rem;

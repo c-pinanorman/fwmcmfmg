@@ -9,25 +9,64 @@
 
     &--text-content {
         position: absolute;
-        top: 25%;
-        right: 8rem;
+        top: 15%;
+        right: 4rem;
         display: flex;
         flex-direction: column;
         align-items: center;
+        color: $darkBlue;
+
+        @include atSmall {
+            position: relative;
+            width: 100%;
+            top: 0;
+            right: 0;
+            background-color: $darkBlue;
+            color: #ffffff;
+            padding: 0 2rem;
+            justify-content: center;
+            text-align: center;
+        }
     }
 
     &--title {
         margin-bottom: 2rem;
         font-weight: 700;
         font-size: 3.5rem;
-        line-height: 2.5rem;
+        line-height: 2.75rem;
         text-transform: uppercase;
-        color: $darkBlue;
+
+        @include atLarge {
+            font-size: 3rem;
+            line-height: 2.25rem;
+        }
+
+        @include atSmall {
+            font-size: 1.75rem;
+            margin: 1rem 0;
+        }
     }
 
     &--subtitle {
         font-size: 2.5rem;
         font-weight: 300;
+        display: block;
+
+        @include atLarge {
+            font-size: 2.14rem;
+        }
+
+        @include atSmall {
+            font-size: inherit;
+            font-weight: inherit;
+            display: inline;
+        }
+    }
+
+    &--button {
+        @include atMedium {
+            display: none;
+        }
     }
 }
 

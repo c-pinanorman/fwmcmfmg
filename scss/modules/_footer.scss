@@ -12,17 +12,45 @@ footer {
     align-items: center;
     justify-content: space-between;
 
+    @include atSmall {
+        flex-direction: column;
+    }
+
+    &--address-container {
+        @include atSmall {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        @include atExtraSmall {
+            flex-direction: column;
+            margin-bottom: 2rem;
+        }
+    }
+
     &--address {
         margin: 1.5rem 0;
 
         &__last {
             margin-bottom: 0;
         }
+
+        @include atSmall {
+            width: 32%;
+        }
+
+        @include atExtraSmall {
+            width: 100%;
+        }
     }
 
     &--icon-container {
         display: flex;
         align-items: center;
+
+        @include atMedium {
+            flex-direction: column;
+        }
     }
 
     &--logo {
@@ -34,9 +62,13 @@ footer {
         display: flex;
         flex-direction: column;
 
+        @include atMedium {
+            flex-direction: row;
+        }
+
         &--logo {
             fill: $babyBlue;
-            margin: 1rem 0;
+            margin: 1rem;
             height: 40px;
         }
     }

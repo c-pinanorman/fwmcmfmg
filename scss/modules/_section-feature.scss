@@ -5,47 +5,18 @@
     justify-content: space-between;
     padding: 2rem 0;
 
-    &__centered {
-        text-align: center;
-    }
-
-    &--content {
-        padding-right: 2.5rem;
-        padding-left: 2.5rem;
-    }
-
     &--heading {
         font-size: 1.15rem;
-        margin-top: 1rem;
     }
     &--title {
         font-size: 2rem;
-        margin-bottom: 1rem;
-
-        &__margin-l {
-            margin-bottom: 2.5rem;
-        }
-    }
-
-    &__single {
-        @extend .feature;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
     }
 
     &--description {
         font-size: 1rem;
         line-height: 1.5rem;
         font-weight: 300;
-
-        &__margin-l {
-            margin: 2rem 0;
-        }
-
-        &__margin-ts {
-            margin: 1rem 0 0 0;
-        }
+        margin-top: 1rem;
 
         &__large {
             font-size: 2.5rem;
@@ -57,8 +28,8 @@
 
 // Help Card
 .help-card {
+    min-width: 325px;
     padding: 1rem;
-    margin: 1rem;
     background-color: $darkBlue;
     color: #ffffff;
     border-radius: 8px;
@@ -67,8 +38,35 @@
     align-items: center;
     justify-content: center;
 
-    &--margin-l {
-        margin-left: 4rem;
+    @include atMedium {
+        width: 100%;
+        margin: 2rem 0 0 0;
+    }
+
+    &--button {
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+        line-height: 1.5rem;
+        padding: 0.65rem 2rem;
+        margin-top: 1rem;
+
+        &__light {
+            background-color: $babyBlue;
+            color: $darkBlue;
+        }
+
+        &__highlight {
+            background-color: $highlightBlue;
+        }
+    }
+
+    &--button-icon {
+        font-size: 1.25rem;
+        margin-right: 1.25rem;
+        vertical-align: middle;
     }
 
     &--heading {

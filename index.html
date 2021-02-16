@@ -15,6 +15,9 @@
     </head>
     <body>
         <header>
+            <div class="header--menu-icon">
+                <div class="header--menu-icon__middle"></div>
+            </div>
             <nav class="mini-nav">
                 <div class="container wrapper">
                     <ul>
@@ -55,43 +58,57 @@
             <div class="home-hero--text-content">
                 <h1 class="home-hero--title">
                     Caring For
-                    <span class="home-hero--subtitle"><br />Our Community</span>
+                    <span class="home-hero--subtitle">Our Community</span>
                 </h1>
-                <a href="./pages/locations.html" class="btn">Find A Clinic</a>
+                <a href="./pages/locations.html" class="home-hero--button btn"
+                    >Find A Clinic</a
+                >
             </div>
         </div>
-        <div class="container">
-            <section class="feature">
-                <div class="feature--content columns--4 columns--border-right">
-                    <h2 class="feature--heading">Multiple Locations In L.A.</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Duis aliquet aliquet mattis. Donec vitae lorem posuere,
-                        commodo lorem at, consectetur lectus. Proin in tortor
-                        luctus elit cursus tempor ac at lacus. Proin eros velit,
-                        malesuada et vestibulum vel, interdum vitae neque.
-                    </p>
+        <div class="container wrapper">
+            <section class="feature home-feature">
+                <div class="home-feature--content-container">
+                    <div class="home-feature--content-first">
+                        <h2 class="feature--heading">
+                            Multiple Locations In L.A.
+                        </h2>
+                        <p class="feature--description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Duis aliquet aliquet mattis. Donec vitae lorem
+                            posuere, commodo lorem at, consectetur lectus. Proin
+                            in tortor luctus elit cursus tempor ac at lacus.
+                            Proin eros velit, malesuada et vestibulum vel,
+                            interdum vitae neque.
+                        </p>
+                    </div>
+                    <div class="home-feature--content-last">
+                        <h2 class="feature--heading">The FWMC MFMG Approach</h2>
+                        <p class="feature--description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Duis aliquet aliquet mattis. Donec vitae lorem
+                            posuere, commodo lorem at, consectetur lectus. Proin
+                            in tortor luctus elit cursus tempor ac at lacus.
+                            Proin eros velit, malesuada et vestibulum vel,
+                            interdum vitae neque.
+                        </p>
+                    </div>
                 </div>
-                <div class="feature--content columns--4">
-                    <h2 class="feature--heading">The FWMC MFMG Approach</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Duis aliquet aliquet mattis. Donec vitae lorem posuere,
-                        commodo lorem at, consectetur lectus. Proin in tortor
-                        luctus elit cursus tempor ac at lacus. Proin eros velit,
-                        malesuada et vestibulum vel, interdum vitae neque.
-                    </p>
-                </div>
-                <div class="columns--4">
-                    <div class="help-card">
-                        <h3 class="help-card--heading">How Can We Help?</h3>
-                        <a class="btn btn--long btn--light btn--margin-tb"
-                            ><i class="fas fa-envelope btn--icon"></i>Send Us An
-                            Email</a
+                <div class="help-card">
+                    <h3 class="help-card--heading">How Can We Help?</h3>
+                    <div class="help-card--button help-card--button__light">
+                        <a class="help-card--button-link"
+                            ><i
+                                class="fas fa-envelope help-card--button-icon"
+                            ></i
+                            >Email Us</a
                         >
-                        <a class="btn btn--long btn--highlight btn--margin-tb"
-                            ><i class="fas fa-map-marker-alt btn--icon"></i>Find
-                            A Location</a
+                    </div>
+                    <div class="help-card--button help-card--button__highlight">
+                        <a class="help-card--find-us-link"
+                            ><i
+                                class="fas fa-map-marker-alt help-card--button-icon"
+                            ></i
+                            >Find A Location</a
                         >
                     </div>
                 </div>
@@ -114,10 +131,12 @@
                         </p>
                         <a class="btn" href="pages/about.html">About Us</a>
                     </div>
-                    <img
-                        class="why-us--image"
-                        src="./assets/images/home-service.jpg"
-                    />
+                    <div class="why-us--image-container">
+                        <img
+                            class="why-us--image"
+                            src="./assets/images/home-service.jpg"
+                        />
+                    </div>
                 </section>
             </div>
             <div class="container">
@@ -127,54 +146,67 @@
                     </h1>
                     <h2 class="specialties--title">Specialties</h2>
                     <p class="specialties--description text-italic">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        <br />
-                        Mauris rutrum sem augue, non consequat felis consequat
-                        eget.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit.Mauris rutrum sem augue, non consequat felis
+                        consequat eget.
                     </p>
                     <div class="specialties--cards-container">
                         <div class="specialty-card">
-                            <div class="specialty-card--icon">
-                                <i class="fas fa-notes-medical"></i>
+                            <div class="specialty-card--icon-container">
+                                <div class="specialty-card--icon">
+                                    <i class="fas fa-notes-medical"></i>
+                                </div>
                             </div>
-                            <h3 class="specialty-card--title">
-                                Immigration Physicals
-                            </h3>
-                            <p class="specialty-card--description">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. Mauris rutrum sem augue, non
-                                consequat felis consequat eget. Phasellus
-                                viverra sem non maximus cursus. Ut efficitur
-                                congue elit a congue.
-                            </p>
+                            <div class="specialty-card--content">
+                                <h3 class="specialty-card--title">
+                                    Immigration Physicals
+                                </h3>
+                                <p class="specialty-card--description">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Mauris rutrum sem augue,
+                                    non consequat felis consequat eget.
+                                    Phasellus viverra sem non maximus cursus. Ut
+                                    efficitur congue elit a congue.
+                                </p>
+                            </div>
                         </div>
                         <div class="specialty-card">
-                            <div class="specialty-card--icon">
-                                <i class="fas fa-weight"></i>
+                            <div class="specialty-card--icon-container">
+                                <div class="specialty-card--icon">
+                                    <i class="fas fa-weight"></i>
+                                </div>
                             </div>
-                            <h3 class="specialty-card--title">Weight-Loss</h3>
-                            <p class="specialty-card--description">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. Mauris rutrum sem augue, non
-                                consequat felis consequat eget. Phasellus
-                                viverra sem non maximus cursus. Ut efficitur
-                                congue elit a congue.
-                            </p>
+                            <div class="specialty-card--content">
+                                <h3 class="specialty-card--title">
+                                    Weight-Loss
+                                </h3>
+                                <p class="specialty-card--description">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Mauris rutrum sem augue,
+                                    non consequat felis consequat eget.
+                                    Phasellus viverra sem non maximus cursus. Ut
+                                    efficitur congue elit a congue.
+                                </p>
+                            </div>
                         </div>
                         <div class="specialty-card">
-                            <div class="specialty-card--icon">
-                                <i class="fas fa-syringe"></i>
+                            <div class="specialty-card--icon-container">
+                                <div class="specialty-card--icon">
+                                    <i class="fas fa-syringe"></i>
+                                </div>
                             </div>
-                            <h3 class="specialty-card--title">
-                                Immigration Physicals
-                            </h3>
-                            <p class="specialty-card--description">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. Mauris rutrum sem augue, non
-                                consequat felis consequat eget. Phasellus
-                                viverra sem non maximus cursus. Ut efficitur
-                                congue elit a congue.
-                            </p>
+                            <div class="specialty-card--content">
+                                <h3 class="specialty-card--title">
+                                    Immigration Physicals
+                                </h3>
+                                <p class="specialty-card--description">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Mauris rutrum sem augue,
+                                    non consequat felis consequat eget.
+                                    Phasellus viverra sem non maximus cursus. Ut
+                                    efficitur congue elit a congue.
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div class="other-services">
@@ -241,33 +273,37 @@
                         <h3 class="upper text-light-blue decorate">
                             Contact Us
                         </h3>
-                        <address class="footer--address">
-                            <p class="text-bold">
-                                Florence Western Medical Clinic
-                            </p>
-                            <p class="text-thin">
-                                7301 S. Western Ave, Los Angeles
-                            </p>
-                            <p class="text-thin">(323) 778-2131</p>
-                        </address>
-                        <address class="footer--address">
-                            <p class="text-bold">
-                                Florence Western Medical Clinic
-                            </p>
-                            <p class="text-thin">
-                                7301 S. Western Ave, Los Angeles
-                            </p>
-                            <p class="text-thin">(323) 778-2131</p>
-                        </address>
-                        <address class="footer--address footer--address__last">
-                            <p class="text-bold">
-                                Florence Western Medical Clinic
-                            </p>
-                            <p class="text-thin">
-                                7301 S. Western Ave, Los Angeles
-                            </p>
-                            <p class="text-thin">(323) 778-2131</p>
-                        </address>
+                        <div class="footer--address-container">
+                            <address class="footer--address">
+                                <p class="text-bold">
+                                    Florence Western Medical Clinic
+                                </p>
+                                <p class="text-thin">
+                                    7301 S. Western Ave, Los Angeles
+                                </p>
+                                <p class="text-thin">(323) 778-2131</p>
+                            </address>
+                            <address class="footer--address">
+                                <p class="text-bold">
+                                    Florence Western Medical Clinic
+                                </p>
+                                <p class="text-thin">
+                                    7301 S. Western Ave, Los Angeles
+                                </p>
+                                <p class="text-thin">(323) 778-2131</p>
+                            </address>
+                            <address
+                                class="footer--address footer--address__last"
+                            >
+                                <p class="text-bold">
+                                    Florence Western Medical Clinic
+                                </p>
+                                <p class="text-thin">
+                                    7301 S. Western Ave, Los Angeles
+                                </p>
+                                <p class="text-thin">(323) 778-2131</p>
+                            </address>
+                        </div>
                     </div>
                     <div class="footer--icon-container">
                         <img
@@ -292,5 +328,6 @@
                 </div>
             </div>
         </footer>
+        <div class="test-mixins"></div>
     </body>
 </html>
