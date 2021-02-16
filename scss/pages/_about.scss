@@ -1,32 +1,66 @@
+.moto-feature {
+    text-align: center;
+
+    &--title {
+        margin-bottom: 1rem;
+    }
+}
+
 .ceo {
     display: flex;
     justify-content: space-between;
 
+    @include atMedium {
+        flex-direction: column-reverse;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    &--title {
+        @include atMedium {
+            margin-top: 1rem;
+        }
+    }
     &--image {
         margin-left: 4.5rem;
         height: 100%;
+
+        @include atMedium {
+            width: 100%;
+            margin: 0 auto;
+        }
     }
 }
 
-.mission--container {
-    width: 75%;
-    border-top: 1px solid $babyBlue;
-}
+.mission {
+    &--container {
+        width: 75%;
+        border-top: 1px solid $babyBlue;
 
-.mission-item {
-    padding: 1rem 0;
-    border-bottom: 1px solid $babyBlue;
-    display: flex;
-
-    &--icon {
-        font-size: 1.75rem;
-        color: $darkGray;
-        margin-right: 1.5rem;
+        @include atMedium {
+            width: 100%;
+        }
     }
 
-    &--statement {
-        font-size: 1.25rem;
-        line-height: 1.75rem;
+    &--heading {
+        margin-top: 2rem;
+    }
+
+    &--item {
+        padding: 1rem 0;
+        border-bottom: 1px solid $babyBlue;
+        display: flex;
+
+        &--icon {
+            font-size: 1.75rem;
+            color: $darkGray;
+            margin-right: 1.5rem;
+        }
+
+        &--statement {
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+        }
     }
 }
 
@@ -42,11 +76,17 @@
 .physicians-container {
     margin: 2rem 0 2rem 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .physician-card {
     width: 23%;
+
+    @include atMedium {
+        width: 48%;
+        margin-bottom: 1rem;
+    }
 
     &--image {
         width: 100%;

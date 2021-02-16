@@ -80,14 +80,35 @@
     align-items: center;
     justify-content: flex-end;
 
+    @include atExtraSmall {
+        flex-direction: column-reverse;
+    }
+
     &--headline-container {
         margin: 0 4rem 2rem 4rem;
         width: 30%;
         position: relative;
+
+        @include atLarge {
+            margin: 0 2rem 2rem 3rem;
+            width: 50%;
+        }
+
+        @include atExtraSmall {
+            width: 100%;
+            margin: 0;
+            padding: 2rem;
+            display: flex;
+            align-content: center;
+        }
     }
 
     &--headline {
         font-size: 2.75rem;
+
+        @include atSmall {
+            font-size: 2.25rem;
+        }
     }
 
     &--headline::after {
@@ -98,6 +119,11 @@
         margin-top: 3.75rem;
         width: 25%;
         height: 0px;
+
+        @include atExtraSmall {
+            margin-top: 2.75rem;
+            margin-left: 2rem;
+        }
     }
 
     &--headline-light {
@@ -118,5 +144,9 @@
         width: 50%;
         height: 100%;
         object-fit: cover;
+
+        @include atExtraSmall {
+            width: 100%;
+        }
     }
 }
