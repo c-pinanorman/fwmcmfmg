@@ -10,6 +10,10 @@
         &__small {
             font-size: 1.25rem;
             line-height: 1.5;
+
+            @include atSmall {
+                font-size: 1rem;
+            }
         }
     }
 
