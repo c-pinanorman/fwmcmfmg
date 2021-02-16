@@ -10,13 +10,40 @@
     }
 }
 
+.service-feature {
+    @include atMedium {
+        flex-direction: column;
+    }
+    &--content {
+        margin-right: 2rem;
+        width: 60%;
+
+        @include atMedium {
+            width: 100%;
+            margin-right: 0;
+        }
+    }
+}
+
 .service-card {
     background-color: $mediumBlue;
     height: 265px;
     width: 23%;
+    margin-bottom: 2rem;
+
+    @include atMedium {
+        width: 48%;
+        margin-bottom: 2rem;
+    }
+
+    @include atSmall {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
 
     &--image {
         height: 75%;
+        width: 100%;
         display: block;
         object-fit: cover;
     }
@@ -34,21 +61,11 @@
         font-weight: 400;
         text-align: center;
     }
-
-    &__margin-t {
-        margin-top: 2rem;
-    }
 }
 
 .service-card__full-width {
     @extend .service-card;
     width: 100%;
-}
-
-.service-card__wide {
-    @extend .service-card;
-    width: 48%;
-    margin-top: 2rem;
 }
 
 .medical-lab-services {
@@ -67,8 +84,16 @@
     .medical-lab-service {
         width: 32%;
         display: flex;
-        border-top: 1px $babyBlue solid;
+        border-bottom: 1px $darkGray solid;
         padding: 0.75rem 0;
+
+        @include atMedium {
+            width: 48%;
+        }
+
+        @include atSmall {
+            width: 100%;
+        }
 
         &--icon {
             color: $darkGray;
@@ -77,20 +102,6 @@
 
         &--description {
             font-size: 1.15rem;
-        }
-
-        &__last-row {
-            border-bottom: 1px $babyBlue solid;
-        }
-
-        &__last-item {
-            border-bottom: 1px $babyBlue solid;
-            justify-content: center;
-
-            .medical-lab-service--description {
-                color: $darkGray;
-                font-weight: 500;
-            }
         }
     }
 }

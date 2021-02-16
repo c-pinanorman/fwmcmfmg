@@ -7,11 +7,12 @@
     padding-bottom: 2rem;
 
     @include atSmall {
-        padding: 1.5rem;
+        padding: 3.5rem 0;
     }
 
     &--heading {
         font-size: 1.15rem;
+        margin-top: 1rem;
     }
     &--title {
         font-size: 2rem;
@@ -23,7 +24,7 @@
 
     &--description {
         font-size: 1.25rem;
-        line-height: 1.5rem;
+        line-height: 1.75rem;
         font-weight: 300;
         margin-top: 1rem;
 
@@ -48,10 +49,10 @@
 // Help Card
 .help-card {
     min-width: 325px;
-    padding: 1rem;
+    padding: 1rem 2rem 2rem 2rem;
     background-color: $darkBlue;
     color: #ffffff;
-    border-radius: 8px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -59,6 +60,7 @@
 
     @include atMedium {
         width: 100%;
+        min-width: auto;
         margin: 2rem 0 0 0;
     }
 
@@ -71,6 +73,11 @@
         line-height: 1.5rem;
         padding: 0.65rem 2rem;
         margin-top: 1rem;
+
+        @include atSmall {
+            padding: 0.65rem 1rem;
+            font-size: 1rem;
+        }
 
         &__light {
             background-color: $babyBlue;

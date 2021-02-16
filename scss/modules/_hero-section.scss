@@ -80,8 +80,9 @@
     align-items: center;
     justify-content: flex-end;
 
-    @include atExtraSmall {
+    @include atSmall {
         flex-direction: column-reverse;
+        height: auto;
     }
 
     &--headline-container {
@@ -94,7 +95,7 @@
             width: 50%;
         }
 
-        @include atExtraSmall {
+        @include atSmall {
             width: 100%;
             margin: 0;
             padding: 2rem;
@@ -105,10 +106,6 @@
 
     &--headline {
         font-size: 2.75rem;
-
-        @include atSmall {
-            font-size: 2.25rem;
-        }
     }
 
     &--headline::after {
@@ -120,17 +117,21 @@
         width: 25%;
         height: 0px;
 
-        @include atExtraSmall {
-            margin-top: 2.75rem;
+        @include atSmall {
+            margin-top: 3.5rem;
             margin-left: 2rem;
         }
     }
 
-    &--headline-light {
+    &--headline__light {
         font-size: 2.75rem;
+
+        @include atSmall {
+            font-size: 2.5rem;
+        }
     }
 
-    &--headline-light::after {
+    &--headline__light::after {
         content: '';
         position: absolute;
         border-top: 3px solid #ffffff;
@@ -138,6 +139,11 @@
         margin-top: 3.75rem;
         width: 25%;
         height: 0px;
+
+        @include atSmall {
+            margin-top: 3.5rem;
+            margin-left: 2rem;
+        }
     }
 
     &--image {
@@ -145,7 +151,7 @@
         height: 100%;
         object-fit: cover;
 
-        @include atExtraSmall {
+        @include atSmall {
             width: 100%;
         }
     }

@@ -1,7 +1,6 @@
 .home-feature {
     @include atMedium {
         flex-direction: column;
-        text-align: center;
     }
 
     &--content-container {
@@ -178,7 +177,7 @@
 
         @include atMedium {
             margin-bottom: 0;
-            margin-right: 3rem;
+            margin-right: 2rem;
         }
 
         @include atExtraSmall {
