@@ -10,13 +10,17 @@
     &--text-content {
         position: absolute;
         top: 15%;
-        right: 4rem;
+        right: 8rem;
         display: flex;
         flex-direction: column;
         align-items: center;
         color: $darkBlue;
 
-        @include atSmall {
+        @include atLarge {
+            right: 4rem;
+        }
+
+        @include atMedium {
             position: relative;
             width: 100%;
             top: 0;
@@ -41,6 +45,11 @@
             line-height: 2.25rem;
         }
 
+        @include atMedium {
+            font-size: 2.25rem;
+            margin: 1rem 0;
+        }
+
         @include atSmall {
             font-size: 1.75rem;
             margin: 1rem 0;
@@ -56,7 +65,7 @@
             font-size: 2.14rem;
         }
 
-        @include atSmall {
+        @include atMedium {
             font-size: inherit;
             font-weight: inherit;
             display: inline;
@@ -80,7 +89,7 @@
     align-items: center;
     justify-content: flex-end;
 
-    @include atSmall {
+    @include atMedium {
         flex-direction: column-reverse;
         height: auto;
     }
