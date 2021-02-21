@@ -104,7 +104,7 @@
             width: 50%;
         }
 
-        @include atSmall {
+        @include atMedium {
             width: 100%;
             margin: 0;
             padding: 2rem;
@@ -126,7 +126,7 @@
         width: 25%;
         height: 0px;
 
-        @include atSmall {
+        @include atMedium {
             margin-top: 3.5rem;
             margin-left: 2rem;
         }
@@ -160,7 +160,7 @@
         height: 100%;
         object-fit: cover;
 
-        @include atSmall {
+        @include atMedium {
             width: 100%;
         }
     }
