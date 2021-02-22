@@ -674,6 +674,11 @@ footer {
   justify-content: space-between;
 }
 
+.main-nav--logo-link {
+  height: 70%;
+  display: block;
+}
+
 @media (max-width: 600px) {
   .main-nav {
     height: 6rem;
@@ -681,7 +686,7 @@ footer {
 }
 
 .main-nav-logo {
-  height: 70%;
+  height: 100%;
 }
 
 .main-nav ul {

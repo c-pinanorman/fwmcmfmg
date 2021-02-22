@@ -40,12 +40,17 @@
     align-items: center;
     justify-content: space-between;
 
+    &--logo-link {
+        height: 70%;
+        display: block;
+    }
+
     @include atSmall {
         height: 6rem;
     }
 
     &-logo {
-        height: 70%;
+        height: 100%;
     }
 
     ul {
